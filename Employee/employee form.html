@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Form</title>
+        <link rel="stylesheet" href="employee form.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="header">
+                <div class="icon baseline">
+                    <img src="https://www.svgrepo.com/show/512728/profile-round-1345.svg" class="svg">
+                </div>
+                Employee Form
+            </h1>
+            <form action="" id="formSubmission" class="label">
+                <div class="label">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="Name" placeholder="Enter your name">
+                </div>
+                <div class="label">
+                    <label for="dob">Date Of Birth</label>
+                    <input type="date" id="dob" name="DOB" placeholder="mm/dd/yyyy">
+                </div>
+                <div class="label">
+                    <label for="empId">Employee ID</label>
+                    <input type="number" id="empId" name="Emp ID" min="1" placeholder="Employee ID">
+                </div>
+                <div class="label">
+                    <label for="payrate">Employee Type</label>
+                  <!-- <input list="types" name="payrate" id="payrate" placeholder="Choose one"> -->
+                    <select id="types">
+                        <option value="Choose" selected>Choose one</option>
+                        <option value="Full time">Full Time</option>
+                        <option value="Contract">Contract</option>
+                      </select>
+                </div>
+                <div class="label">
+                    <p>Pay rate</p>
+                    <div class="rad">
+                        <div><label><input type="radio" name="pay" value="Hrs" id="r1"> /hrs</label></div>
+                        <div><label><input type="radio" name="pay" value="Days" id="r2"> /days</label></div>
+                    </div>
+                </div>
+                <div class="label">
+                    <p>Interests</p>
+                    <div class="check">
+                        <div><label for="ch1"><input type="checkbox" name="interest" value="Movies" id="ch1">Movies</label></div>
+                        <div><label for="ch2"><input type="checkbox" name="interest" value="Books" id="ch2">Books</label></div>
+                        <div><label for="ch3"><input type="checkbox" name="interest" value="Games" id="ch3">Games</label></div>
+                    </div>
+                </div>
+                <div class="clearbtn"><button type="reset" onclick="clear()">Clear</button></div>
+            </form>
+            <div class="savebtn"><button type="button" onclick="submit()">Save</button></div>
+        </div>
+        <div>
+            <button type="reset" onclick="emptyrows()">Empty Rows</button>
+            <table id="tbl">
+                <thead>
+                <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Emp ID</th>
+                <th>Emp type</th>
+                <th>Payrate</th>
+                <th>Interests</th>
+                <th>Actions</th>    
+                </tr>
+                </thead>
+                <tbody id="data"></tbody>
+                
+            </table>
+        </div>
+    </body>
+    <script src="employee form.js"></script>
+</html>

@@ -1,0 +1,95 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open-sans',serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f8ff;
+    margin: 60px;
+}
+
+h1{
+    font-style:italic;
+}
+form.label {
+    
+    padding: 20px;
+}
+div.label {
+    display: table-row;
+}
+label,
+input,.rad,.check{
+    display: table-cell;
+    margin-bottom: 10px;
+}
+label {
+    padding-right: 50px;
+}
+
+button{
+    text-align: center;
+    background-color: skyblue;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px;
+}
+ul li{
+    border: 1px solid lightgray;
+    text-align: center;
+    padding: 8px;
+}
+button:hover, input:hover{
+    cursor: pointer;
+}
+input{
+    border:1px solid skyblue;
+    background-color: white;
+}
+.icon {
+    display: inline-flex;
+    align-self: center;
+    padding: 10px;
+}
+.icon svg, .icon img {
+    height: 1em;
+    width: 1em;
+    fill: currentColor;
+}
+.icon.baseline svg, .icon img {
+    top: .125em;
+    position: relative;
+}
+.header{
+    width: 100%;
+    height: auto;
+    background-color: skyblue;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: 'Satisfy', cursive;
+}
+table,th,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding:10px;
+    text-align: center;
+}
+tr:nth-child(2n)
+    {
+    background-color: lightgray;
+    }
+.clearbtn{
+    display:grid;
+}
+.savebtn{
+    width: 88%;
+    height: auto;
+    display: grid;
+}
+
